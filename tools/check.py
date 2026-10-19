@@ -3,6 +3,9 @@ from html.parser import HTMLParser
 import json,base64,hashlib,re
 ROOT=Path(__file__).resolve().parents[1]
 c=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'))
+css=(ROOT/'src/styles.css').read_text(encoding='utf-8')
+assert 'html:not(.has-js) .enhanced-only' in css
+assert '\n:not(.has-js) .enhanced-only' not in css
 class Inspect(HTMLParser):
     def __init__(self):super().__init__();self.cards=[];self.images=[];self.recipes=0;self.defaults=0
     def handle_starttag(self,tag,attrs):
