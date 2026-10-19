@@ -16,6 +16,9 @@ create the core content. This repairs the former empty-gallery failure when a
 phone's downloaded-file preview restricts scripts. The exact phone viewer was
 not independently reproduced.
 
+CSS and JavaScript filenames include content hashes, so a changed release does
+not reuse a browser's cached copy of old controls or layout.
+
 ## Update once
 
 1. Edit `data/catalog.json`; preserve existing IDs, names and recipes unless an

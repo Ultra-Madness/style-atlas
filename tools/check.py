@@ -22,6 +22,9 @@ for name in ['index.html','Style-Atlas-Offline.html']:
         assert a['data-job']==e['source']['job_id'] and int(a['data-image-index'])==e['source']['image_index']
         assert e['recipe'].replace('&','&amp;').replace('<','&lt;').replace('>','&gt;') in content or e['recipe'] in content
     assert len(p.images)==30
+    for relative in re.findall(r'(?:href|src)="\./([^"?]+\.(?:css|js))"',content):
+        assert (ROOT/'site'/relative).is_file(),relative
+        assert re.search(r'\.[a-f0-9]{12}\.',relative),relative
     for image in p.images:
         src=image['src']
         if src.startswith('data:'):assert len(base64.b64decode(src.split(',')[1]))>1000

@@ -1,5 +1,5 @@
 from pathlib import Path
-import json,html,base64,shutil
+import json,html,base64,shutil,hashlib
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'site';OUT.mkdir(exist_ok=True)
 CAT=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'))
@@ -28,8 +28,10 @@ def render(offline=False):
     data={'version':CAT['version'],'default_style_id':CAT['default_style_id'],'families':CAT['families'],'entries':[{**e,'instruction':instruction(e)} for e in entries]}
     jsondata=json.dumps(data,ensure_ascii=False).replace('</','<\\/')
     css=(ROOT/'src/styles.css').read_text(encoding='utf-8');js=(ROOT/'src/app.js').read_text(encoding='utf-8')
-    stylesheet='<style>'+css+'</style>' if offline else '<link rel="stylesheet" href="./styles.css">'
-    script='<script>'+js+'</script>' if offline else '<script defer src="./app.js"></script>'
+    cssname='styles.'+hashlib.sha256(css.encode()).hexdigest()[:12]+'.css'
+    jsname='app.'+hashlib.sha256(js.encode()).hexdigest()[:12]+'.js'
+    stylesheet='<style>'+css+'</style>' if offline else f'<link rel="stylesheet" href="./{cssname}">'
+    script='<script>'+js+'</script>' if offline else f'<script defer src="./{jsname}"></script>'
     policy="default-src 'none'; img-src data:; script-src 'unsafe-inline'; style-src 'unsafe-inline'; base-uri 'none'; object-src 'none'" if offline else "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; base-uri 'none'; object-src 'none'"
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#172a2c"><meta name="description" content="Browse 29 visual reference styles by picture and number. Current default: Style 8 Olive Kitchen Chronicle."><meta http-equiv="Content-Security-Policy" content="{policy}"><title>Style Atlas / 29 visual references</title>{stylesheet}</head><body>
 <header><div class="mast"><span>STYLE ATLAS / BATCH 01</span><a href="#gallery">29 visual references</a></div><div class="intro"><div><p class="eyebrow">A CREATIVE REFERENCE LIBRARY</p><h1>Choose by eye.<br>Call by <em>number.</em></h1></div><p class="lede">Find a look you like, then say <strong>use style 17.</strong> Each reference has a recipe for a fresh subject. Pictures and recipes are available even without scripts.</p></div>
@@ -41,7 +43,9 @@ def render(offline=False):
 <dialog id="viewer"><div class="dialoghead"><h2 id="viewtitle"></h2><button type="button" class="close" id="close" aria-label="Close enlarged reference">&times;</button></div><img class="dialogimage" id="viewimage" alt=""><p class="dialogfoot" id="viewsource"></p></dialog><div class="toast" id="toast" role="status" aria-live="polite"></div><script id="catalog-data" type="application/json">{jsondata}</script>{script}</body></html>'''
 def build():
     shutil.copytree(ROOT/'assets',OUT/'assets',dirs_exist_ok=True)
-    shutil.copyfile(ROOT/'src/styles.css',OUT/'styles.css');shutil.copyfile(ROOT/'src/app.js',OUT/'app.js')
+    for name in ['styles.css','app.js']:
+        content=(ROOT/'src'/name).read_bytes(); stem,suffix=name.rsplit('.',1)
+        (OUT/(stem+'.'+hashlib.sha256(content).hexdigest()[:12]+'.'+suffix)).write_bytes(content)
     (OUT/'catalog.json').write_text(json.dumps(CAT,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     (OUT/'index.html').write_text(render(),encoding='utf-8')
     (OUT/'Style-Atlas-Offline.html').write_text(render(True),encoding='utf-8')
