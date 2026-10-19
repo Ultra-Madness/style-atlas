@@ -80,6 +80,7 @@
   }
   $('search').addEventListener('input', filter);
   $('reset').addEventListener('click', reset);
+  doc.querySelector('.defaultbar').addEventListener('click', reset);
   $('emptyreset').addEventListener('click', reset);
   $('filters').addEventListener('click', event => {
     const button = event.target.closest('button[data-family]');
