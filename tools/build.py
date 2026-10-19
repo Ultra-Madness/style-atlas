@@ -44,7 +44,7 @@ def render(offline=False):
 def build():
     shutil.copytree(ROOT/'assets',OUT/'assets',dirs_exist_ok=True)
     for name in ['styles.css','app.js']:
-        content=(ROOT/'src'/name).read_bytes(); stem,suffix=name.rsplit('.',1)
+        content=(ROOT/'src'/name).read_text(encoding='utf-8').encode('utf-8'); stem,suffix=name.rsplit('.',1)
         (OUT/(stem+'.'+hashlib.sha256(content).hexdigest()[:12]+'.'+suffix)).write_bytes(content)
     (OUT/'catalog.json').write_text(json.dumps(CAT,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     (OUT/'index.html').write_text(render(),encoding='utf-8')
