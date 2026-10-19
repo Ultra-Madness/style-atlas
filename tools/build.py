@@ -3,6 +3,9 @@ import json,html,base64,shutil,hashlib
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'site';OUT.mkdir(exist_ok=True)
 CAT=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'))
+ICONS=json.loads((ROOT/'assets/branding/icons.json').read_text(encoding='utf-8'))
+MANIFEST_NAME='manifest.'+ICONS['identity']+'.webmanifest'
+APP_BASE='/style-atlas/'
 esc=lambda s:html.escape(str(s),quote=True)
 labels={'F1':'Editorial & documentary','F2':'Cinematic atmosphere','F3':'Precision realism','F4':'Line, print & optical','F5':'Painterly & luminous','F6':'Anime & concept','F7':'Tactile 3D'}
 def instruction(e):return f"Use style {e['number']} - {e['id']} {e['name']} - for [NEW SUBJECT], adapted to [FORMAT]. Apply this rendering recipe with a fresh subject and composition: {e['recipe']}"
@@ -33,8 +36,14 @@ def render(offline=False):
     stylesheet='<style>'+css+'</style>' if offline else f'<link rel="stylesheet" href="./{cssname}">'
     script='<script>'+js+'</script>' if offline else f'<script defer src="./{jsname}"></script>'
     policy="default-src 'none'; img-src data:; script-src 'unsafe-inline'; style-src 'unsafe-inline'; base-uri 'none'; object-src 'none'" if offline else "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; base-uri 'none'; object-src 'none'"
-    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#172a2c"><meta name="description" content="Browse 29 visual reference styles by picture and number. Current default: Style 8 Olive Kitchen Chronicle."><meta http-equiv="Content-Security-Policy" content="{policy}"><title>Style Atlas / 29 visual references</title>{stylesheet}</head><body>
-<header><div class="mast"><span>STYLE ATLAS / BATCH 01</span><a href="#gallery">29 visual references</a></div><div class="intro"><div><p class="eyebrow">A CREATIVE REFERENCE LIBRARY</p><h1>Choose by eye.<br>Call by <em>number.</em></h1></div><p class="lede">Find a look you like, then say <strong>use style 17.</strong> Each reference has a recipe for a fresh subject. Pictures and recipes are available even without scripts.</p></div>
+    def branding_url(name,mime):
+        if offline:return 'data:'+mime+';base64,'+base64.b64encode((ROOT/'assets/branding'/name).read_bytes()).decode('ascii')
+        return './assets/branding/'+name
+    logo=branding_url(ICONS['svg'],'image/svg+xml')
+    icon_meta=f'<link rel="icon" href="{branding_url(ICONS["favicon"],"image/x-icon")}" sizes="16x16 32x32 48x48"><link rel="icon" type="image/png" sizes="32x32" href="{branding_url(ICONS["png"]["32"],"image/png")}"><link rel="icon" type="image/svg+xml" sizes="any" href="{logo}"><link rel="apple-touch-icon" sizes="180x180" href="{branding_url(ICONS["png"]["180"],"image/png")}"><meta name="apple-mobile-web-app-title" content="Style Atlas"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="application-name" content="Style Atlas">'
+    if not offline:icon_meta+=f'<link rel="manifest" href="./{MANIFEST_NAME}">'
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="{ICONS['background']}"><meta name="description" content="Browse 29 visual reference styles by picture and number. Current default: Style 8 Olive Kitchen Chronicle."><meta http-equiv="Content-Security-Policy" content="{policy}"><title>Style Atlas / 29 visual references</title>{icon_meta}{stylesheet}</head><body>
+<header><div class="mast"><span class="mast-brand"><img src="{logo}" alt="" aria-hidden="true" width="28" height="28">STYLE ATLAS / BATCH 01</span><a href="#gallery">29 visual references</a></div><div class="intro"><div><p class="eyebrow">A CREATIVE REFERENCE LIBRARY</p><h1>Choose by eye.<br>Call by <em>number.</em></h1></div><p class="lede">Find a look you like, then say <strong>use style 17.</strong> Each reference has a recipe for a fresh subject. Pictures and recipes are available even without scripts.</p></div>
 <a class="defaultbar" href="#{default['id']}" aria-label="Go to current default style 8"><img src="{image(default)}" alt="Current default style 8 reference" width="54" height="66"><span><small>Current default / Style 08</small><strong>Olive Kitchen Chronicle</strong></span><span>View default &darr;</span></a></header>
 <main><section class="controls enhanced-only" aria-label="Find a style"><div class="searchrow"><label class="searchbox"><input id="search" type="search" aria-label="Search styles" placeholder="Number, name, color or mood..." autocomplete="off"></label><button type="button" class="reset" id="reset">Reset filters</button></div><div class="filters" id="filters" aria-label="Style families">{filters}</div></section>
 <noscript><p class="previewnote">All 29 references and recipes are shown below. Open this page in Safari or Chrome to use search, filters and copy buttons.</p></noscript>
@@ -43,6 +52,12 @@ def render(offline=False):
 <dialog id="viewer"><div class="dialoghead"><h2 id="viewtitle"></h2><button type="button" class="close" id="close" aria-label="Close enlarged reference">&times;</button></div><img class="dialogimage" id="viewimage" alt=""><p class="dialogfoot" id="viewsource"></p></dialog><div class="toast" id="toast" role="status" aria-live="polite"></div><script id="catalog-data" type="application/json">{jsondata}</script>{script}</body></html>'''
 def build():
     shutil.copytree(ROOT/'assets',OUT/'assets',dirs_exist_ok=True)
+    manifest={'id':APP_BASE,'name':'Style Atlas - Visual Library','short_name':'Style Atlas','description':'29 visual styles, references and reusable prompt recipes.','lang':'en','start_url':APP_BASE,'scope':APP_BASE,'display':'standalone','background_color':ICONS['background'],'theme_color':ICONS['background'],'icons':[]}
+    for size in [192,512]:
+        for purpose in ['any','maskable']:
+            key=str(size) if purpose=='any' else 'maskable-'+str(size)
+            manifest['icons'].append({'src':'./assets/branding/'+ICONS['png'][key],'sizes':f'{size}x{size}','type':'image/png','purpose':purpose})
+    (OUT/MANIFEST_NAME).write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
     for name in ['styles.css','app.js']:
         content=(ROOT/'src'/name).read_text(encoding='utf-8').encode('utf-8'); stem,suffix=name.rsplit('.',1)
         (OUT/(stem+'.'+hashlib.sha256(content).hexdigest()[:12]+'.'+suffix)).write_bytes(content)

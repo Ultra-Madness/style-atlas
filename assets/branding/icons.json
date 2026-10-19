@@ -1,0 +1,17 @@
+{
+  "identity": "682e4c522098",
+  "background": "#142D2D",
+  "svg": "style-atlas.682e4c522098.svg",
+  "favicon": "style-atlas.682e4c522098.ico",
+  "png": {
+    "16": "style-atlas.682e4c522098.16.png",
+    "32": "style-atlas.682e4c522098.32.png",
+    "180": "style-atlas.682e4c522098.180.png",
+    "192": "style-atlas.682e4c522098.192.png",
+    "512": "style-atlas.682e4c522098.512.png",
+    "maskable-192": "style-atlas.682e4c522098.maskable-192.png",
+    "maskable-512": "style-atlas.682e4c522098.maskable-512.png"
+  },
+  "maskable_art_radius_fraction": 0.3046875,
+  "description": "Six contrasting swatches form a rotating aperture around a deep-ink hexagonal opening. Original vector artwork; no reference image is used."
+}

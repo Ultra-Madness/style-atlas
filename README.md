@@ -19,6 +19,20 @@ not independently reproduced.
 CSS and JavaScript filenames include content hashes, so a changed release does
 not reuse a browser's cached copy of old controls or layout.
 
+## App identity
+
+The original Swatch Aperture icon is provided as SVG, a multi-size favicon,
+Apple touch PNG, regular 192/512 PNGs and maskable 192/512 PNGs. Artwork uses an
+opaque ink background; the maskable mark stays within the central safe circle.
+The web manifest and every icon filename carry the artwork identity hash.
+Launch URL, app ID and scope remain `/style-atlas/` so home-screen shortcuts
+return to the same project rather than the account root.
+
+To revise the icon, edit `tools/make_icons.py`, run it with Pillow available,
+then build/check normally and commit the generated assets. The deployed build
+does not require Pillow. Phone home-screen icons are managed by the phone; an
+existing cached shortcut may need to be removed and added again after a change.
+
 ## Update once
 
 1. Edit `data/catalog.json`; preserve existing IDs, names and recipes unless an
