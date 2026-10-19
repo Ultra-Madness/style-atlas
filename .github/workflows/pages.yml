@@ -1,0 +1,33 @@
+name: Check and publish Style Atlas
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - name: Build the same gallery for desktop and phone
+        run: python3 tools/build.py
+      - name: Check static content and image mappings
+        run: python3 tools/check.py
+      - name: Check search and style families
+        run: node tests/logic.cjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v4

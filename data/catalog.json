@@ -1,0 +1,912 @@
+{
+  "version": "1.1.0",
+  "observed_date": "2026-10-19",
+  "default_style_id": "MJ-S008",
+  "families": [
+    {
+      "id": "F1",
+      "name": "Editorial and documentary photography",
+      "members": [
+        "MJ-S001",
+        "MJ-S005",
+        "MJ-S007",
+        "MJ-S008",
+        "MJ-S010",
+        "MJ-S011",
+        "MJ-S024"
+      ],
+      "distinction": "Choose the light and framing: twilight intimacy, candid daylight, golden rim, olive documentary, rose softness, dappled sun, or overhead tactile detail."
+    },
+    {
+      "id": "F2",
+      "name": "Cinematic atmosphere",
+      "members": [
+        "MJ-S004",
+        "MJ-S006",
+        "MJ-S017",
+        "MJ-S019"
+      ],
+      "distinction": "Different spatial moods: tight layered action, expansive window framing, violet wet night, and isolated teal fog."
+    },
+    {
+      "id": "F3",
+      "name": "Precision photographic realism",
+      "members": [
+        "MJ-S020",
+        "MJ-S029"
+      ],
+      "distinction": "Cool low-key sculptural precision versus bright top-down organic texture."
+    },
+    {
+      "id": "F4",
+      "name": "Line, print and optical graphics",
+      "members": [
+        "MJ-S002",
+        "MJ-S009",
+        "MJ-S014",
+        "MJ-S015",
+        "MJ-S022",
+        "MJ-S025",
+        "MJ-S028"
+      ],
+      "distinction": "Sparse ink, high-key blur, fine decorative print, scattered pattern, contour bands, bold blockprint, and gestural pencil remain separate."
+    },
+    {
+      "id": "F5",
+      "name": "Painterly and luminous illustration",
+      "members": [
+        "MJ-S003",
+        "MJ-S013",
+        "MJ-S021",
+        "MJ-S023",
+        "MJ-S027"
+      ],
+      "distinction": "Translucent fantasy, fine decorative stippling, saturated brushwork, angular facets, and painted reflective materials."
+    },
+    {
+      "id": "F6",
+      "name": "Anime and concept design",
+      "members": [
+        "MJ-S016",
+        "MJ-S018"
+      ],
+      "distinction": "Full-form gritty concept plate versus a flat cel-colored close crop."
+    },
+    {
+      "id": "F7",
+      "name": "Stylized tactile 3D",
+      "members": [
+        "MJ-S012",
+        "MJ-S026"
+      ],
+      "distinction": "Shaggy fiber volume versus smooth molded designer-toy form and graphic surface patterns."
+    }
+  ],
+  "entries": [
+    {
+      "id": "MJ-S001",
+      "name": "Blue Hour Keepsake",
+      "family": "Photographic realism / intimate editorial",
+      "family_id": "F1",
+      "tags": [
+        "blue hour",
+        "warm-cool separation",
+        "analog softness",
+        "quiet",
+        "editorial"
+      ],
+      "lighting": "Cool twilight ambient light with warmer illumination on the foreground. Soft frontal or near-frontal fill is a useful descriptive recipe; an actual flash setup is not known.",
+      "palette": "Deep teal-blue and marine navy, charcoal, warm ivory, restrained peach skin-like midtones.",
+      "contrast": "Medium-high overall; dark background and clothing carry substantial shadow mass while warm pale highlights separate the focal area.",
+      "texture": "Photographic appearance with slightly soft detail and a subtle grain-like finish; matte fabric and smooth, natural-looking surface transitions.",
+      "composition": "Vertical, quiet off-center emphasis in the lower part of the frame; a broad horizontal background band supplies environmental context and breathing room.",
+      "treatment": "Naturalistic editorial photograph with a nostalgic color-negative-film feel. Film stock, lens, exposure and flash use are unknown.",
+      "recipe": "[NEW SUBJECT], quiet environmental editorial photograph at blue hour, deep teal and navy surroundings, warm ivory and peach focal accents, subtle warm frontal fill against cool ambient light, natural matte textures, restrained grain-like softness, generous environmental space, a calm off-center focal anchor, medium-high tonal contrast.",
+      "distinction": "Preserve the cool environment versus warm focal plane and quiet spacing. Unlike MJ-S005, this relies on dark twilight atmosphere rather than bright social immediacy.",
+      "confidence": "Medium: visual style inferred from a complete feed thumbnail approximately 291 × 387 px; no detail view or generation metadata inspected.",
+      "number": 1,
+      "source": {
+        "job_id": "de0361b3-a208-41e8-84ae-b0509a40cc65",
+        "image_index": 3,
+        "creator": "guojinbeiyong",
+        "source_url": "https://www.midjourney.com/jobs/de0361b3-a208-41e8-84ae-b0509a40cc65?index=3"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S001.jpg"
+    },
+    {
+      "id": "MJ-S002",
+      "name": "One Amber Mark",
+      "family": "Graphic illustration / sparse ink",
+      "family_id": "F4",
+      "tags": [
+        "ink",
+        "white space",
+        "single color accent",
+        "sketch",
+        "linework"
+      ],
+      "lighting": "No volumetric lighting model; illumination is implied by white paper and sparse marks.",
+      "palette": "Paper white and fine black lines, with one small amber-orange accent.",
+      "contrast": "High black-on-white graphic contrast, but low ink density keeps the overall field airy.",
+      "texture": "Loose pen-like strokes with small wobbles, uneven line weight, open contours and minimal hatching. Any physical paper or pen tool is unverified.",
+      "composition": "Tall composition with converging perspective lines and broad unfilled areas; a small warm accent becomes a focal punctuation mark.",
+      "treatment": "Observational freehand ink-sketch appearance with simplified forms and selective detail; intentionally incomplete rather than photorealistic.",
+      "recipe": "[NEW SUBJECT], sparse freehand black ink illustration on clean white ground, delicate irregular contour lines, selective structural detail, a few loose perspective guides, minimal hatching, large untouched negative spaces, one tiny amber-orange focal accent, no broad tonal shading.",
+      "distinction": "The color occupies a tiny fraction of the image. Expanding it into a full wash would lose the style's distinctive restraint.",
+      "confidence": "Medium-high for broad graphic properties; thumbnail approximately 291 × 414 px, actual drawing method unknown.",
+      "number": 2,
+      "source": {
+        "job_id": "3e35c1f6-2899-47d2-8d74-5e99cf74e73f",
+        "image_index": 1,
+        "creator": "primaluser22",
+        "source_url": "https://www.midjourney.com/jobs/3e35c1f6-2899-47d2-8d74-5e99cf74e73f?index=1"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S002.jpg"
+    },
+    {
+      "id": "MJ-S003",
+      "name": "Pearlbeam Reverie",
+      "family": "Illustrative realism / luminous fantasy",
+      "family_id": "F5",
+      "tags": [
+        "pastel",
+        "pearlescent",
+        "backlight",
+        "dreamlike",
+        "airy",
+        "fantasy"
+      ],
+      "lighting": "Radiant warm backlight, luminous atmospheric rays and glancing edge highlights; light appears to bloom through haze.",
+      "palette": "Blush pink, pearl white, peach-gold and pale blue, with restrained lavender notes.",
+      "contrast": "Low-to-medium local contrast through most of the image, with clearer focal edges against bright atmospheric forms.",
+      "texture": "Delicate layered and translucent-looking materials, fine decorative detail, softly blended atmosphere and pearlescent highlights.",
+      "composition": "Tall sweeping arrangement with upward movement, a smaller focal anchor and expansive luminous surroundings; flowing lines guide the eye through depth.",
+      "treatment": "Highly polished fantasy illustration with photorealistic detail cues and romantic, painterly atmosphere. This is a visual treatment, not verified photography.",
+      "recipe": "[NEW SUBJECT], luminous romantic fantasy illustration, pearl-white and blush-pink surfaces with peach-gold highlights and pale-blue shadows, radiant backlighting, soft atmospheric light beams, airy layered depth, delicate translucent material detail, flowing upward visual rhythm, gently blooming highlights, restrained contrast.",
+      "distinction": "Use luminous pastel depth and fine flowing detail together. Avoid flattening the result into a plain pastel wash or harsh neon spectacle.",
+      "confidence": "Medium: full thumbnail approximately 291 × 520 px; fine material descriptions remain provisional.",
+      "number": 3,
+      "source": {
+        "job_id": "dc468d9d-169d-4108-b45d-461eae9c32ff",
+        "image_index": 2,
+        "creator": "u1156973246",
+        "source_url": "https://www.midjourney.com/jobs/dc468d9d-169d-4108-b45d-461eae9c32ff?index=2"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S003.jpg"
+    },
+    {
+      "id": "MJ-S004",
+      "name": "Steelwind Close-Up",
+      "family": "Photographic realism / dramatic cinema",
+      "family_id": "F2",
+      "tags": [
+        "cinematic",
+        "close perspective",
+        "selective focus",
+        "steel",
+        "motion",
+        "diagonal"
+      ],
+      "lighting": "Directional, broken highlights across the focal area, with substantial shadow and cool reflective foreground light.",
+      "palette": "Steel blue-gray, charcoal, muted olive-black and warm neutral midtones.",
+      "contrast": "High focal contrast around the central sharp detail; darker perimeter tones and soft foreground blur intensify it.",
+      "texture": "Crisp, slightly gritty focal microdetail paired with reflective metal-like surfaces and streaking fine elements; pronounced near/far softness.",
+      "composition": "Very tight crop, direct focal engagement, strong diagonal foreground intrusion, overlapping planes and little negative space.",
+      "treatment": "Dramatic action-still appearance, close perspective and shallow-depth-of-field-like separation. Wide lens, aperture, shutter speed and actual camera use are not known.",
+      "recipe": "[NEW SUBJECT], dramatic cinematic close view, tightly cropped frame, one sharply resolved focal detail, overlapping diagonal foreground planes, cool steel-blue and muted olive shadows balanced by warm neutral midtones, directional broken highlights, crisp tactile microtexture, strong near-field blur, subtle wind-driven streaks, high focal contrast.",
+      "distinction": "Keep the combination of intimate proximity, diagonal layering and selective sharpness. The recipe does not require a weapon, specific person or costume.",
+      "confidence": "Medium: full thumbnail approximately 291 × 437 px; camera terminology is descriptive only.",
+      "number": 4,
+      "source": {
+        "job_id": "8168f9a6-fd5b-4ed6-95d3-81ffdffdde79",
+        "image_index": 1,
+        "creator": "u2951851587",
+        "source_url": "https://www.midjourney.com/jobs/8168f9a6-fd5b-4ed6-95d3-81ffdffdde79?index=1"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S004.jpg"
+    },
+    {
+      "id": "MJ-S005",
+      "name": "Softshade Sunday",
+      "family": "Photographic realism / candid lifestyle",
+      "family_id": "F1",
+      "tags": [
+        "lifestyle",
+        "soft daylight",
+        "muted green",
+        "candid",
+        "warm",
+        "film-like"
+      ],
+      "lighting": "Soft diffuse daylight with gentle shaded transitions; broad even illumination preserves bright pale surfaces without a harsh spotlight effect.",
+      "palette": "Warm white, muted forest green, near-black and soft peach-beige accents.",
+      "contrast": "Medium contrast, bright midtones and controlled soft highlights; dark blocks provide structure without dominating the mood.",
+      "texture": "Fine grain-like photographic finish, soft fabric detail and natural-looking tactile surfaces; slightly softened edges rather than clinical sharpness.",
+      "composition": "Close, informal framing with edge crops and overlapping forms; attention rests on a small central moment of interaction, producing spontaneity.",
+      "treatment": "Candid lifestyle/editorial photograph with a nostalgic snapshot feel. Actual candid capture, film stock and lens are unknown.",
+      "recipe": "[NEW SUBJECT], warm candid lifestyle editorial treatment, soft diffuse shaded daylight, warm-white and muted forest-green palette, gentle peach-beige accents, bright natural midtones, controlled highlights, soft tactile surface detail, restrained grain-like finish, informal close framing with overlapping forms and unforced edge crops.",
+      "distinction": "Lighter, more relaxed and more immediate than MJ-S001. Keep the soft daylight and informal crop; the source's people and activity are not part of the recipe.",
+      "confidence": "Medium: full thumbnail approximately 291 × 364 px; no photographic metadata inspected.",
+      "number": 5,
+      "source": {
+        "job_id": "15ad6fe8-648d-44d1-a470-3ec747efbc27",
+        "image_index": 2,
+        "creator": "okokokigetitstop",
+        "source_url": "https://www.midjourney.com/jobs/15ad6fe8-648d-44d1-a470-3ec747efbc27?index=2"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S005.jpg"
+    },
+    {
+      "id": "MJ-S006",
+      "name": "Windowseat Metropolis",
+      "family": "Cinematic atmosphere",
+      "family_id": "F2",
+      "tags": [
+        "warm interior",
+        "cool city",
+        "frame within frame"
+      ],
+      "lighting": "Low warm sun enters from one side; deep interior shadows contrast with the cooler exterior.",
+      "palette": "Amber, walnut brown, charcoal, pale cream and restrained cyan-blue.",
+      "contrast": "High between bright window and dark interior; softer atmospheric contrast in the distant view.",
+      "texture": "Photographic-looking glass, soft fabric, scattered hard surfaces and softened distant detail.",
+      "composition": "Vertical environmental scene with a large rectangular frame inside the image, a low focal anchor and expansive upper background.",
+      "treatment": "Cinematic environmental photograph; window-light and moderately wide-view language is descriptive, not metadata.",
+      "recipe": "[NEW SUBJECT], contemplative cinematic environmental view, warm low-angle side light, amber and walnut interior tones against a cooler cyan-blue distance, deep charcoal shadows, a large rectangular framing element, low-positioned focal anchor, layered depth and natural tactile surfaces.",
+      "distinction": "Uses a bright framed exterior to make an intimate shaded interior feel expansive; unlike S019, the warmth occupies a broad foreground area.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 6,
+      "source": {
+        "job_id": "e7a66bf2-576c-421c-96a5-bef0eb3e23f3",
+        "image_index": 0,
+        "creator": "The90sMcfly",
+        "source_url": "https://www.midjourney.com/jobs/e7a66bf2-576c-421c-96a5-bef0eb3e23f3?index=0"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S006.jpg"
+    },
+    {
+      "id": "MJ-S007",
+      "name": "Honeylit Boulevard",
+      "family": "Warm editorial photography",
+      "family_id": "F1",
+      "tags": [
+        "golden hour",
+        "rim light",
+        "long perspective"
+      ],
+      "lighting": "Warm low back/side light creates a glowing outline and long soft-edged shadows.",
+      "palette": "Honey gold, sandstone, cocoa brown and near-black.",
+      "contrast": "Medium-high, with glowing edges separating dark focal shapes from a lighter background.",
+      "texture": "Softly resolved stone-like background, smooth dark fabrics and fine hair-like edge detail.",
+      "composition": "Tall full-length framing, long receding background lines, strong vertical focal anchor and softly blurred surroundings.",
+      "treatment": "Polished fashion-editorial photograph with a compressed-background feel; lens and focal length unknown.",
+      "recipe": "[NEW SUBJECT], elegant full-length editorial treatment, honey-gold low backlight with a fine glowing rim, sandstone and cocoa surroundings, dark focal silhouette, long receding perspective, softly blurred environmental detail, polished natural textures, restrained warm color grade.",
+      "distinction": "More polished and sculptural than S005's spontaneous close framing; golden rim light is the key cue.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 7,
+      "source": {
+        "job_id": "7ddb0891-8812-4594-8270-f6f8ea32f2b8",
+        "image_index": 1,
+        "creator": "hawkeye73_32412",
+        "source_url": "https://www.midjourney.com/jobs/7ddb0891-8812-4594-8270-f6f8ea32f2b8?index=1"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S007.jpg"
+    },
+    {
+      "id": "MJ-S008",
+      "name": "Olive Kitchen Chronicle",
+      "family": "Documentary photography",
+      "family_id": "F1",
+      "tags": [
+        "olive grade",
+        "soft natural light",
+        "lived-in"
+      ],
+      "lighting": "Soft side-biased ambient light, with gentle shadow transitions rather than conspicuous studio highlights.",
+      "palette": "Olive green, yellowed cream, muted tan, warm wood and subdued charcoal.",
+      "contrast": "Low-to-medium with slightly muted whites and open shadow detail.",
+      "texture": "Fine grain-like softness, everyday matte surfaces, lightly worn wood and loosely resolved background clutter.",
+      "composition": "Front-facing medium environmental framing, a broad horizontal surface below and contextual objects surrounding the focal area.",
+      "treatment": "Informal documentary/snapshot appearance with an olive film-like cast; actual film and capture circumstances unknown.",
+      "recipe": "[NEW SUBJECT], warm informal documentary photograph, olive-green and aged-cream color grade, soft natural side light, modest contrast, open shadows, fine grain-like softness, everyday matte materials and a lived-in environment, frontal medium framing with contextual layers.",
+      "distinction": "The olive cast and unpolished environmental detail distinguish it from the cleaner white daylight of S005.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 8,
+      "source": {
+        "job_id": "c165cce5-13da-47de-9799-8ec187450d87",
+        "image_index": 3,
+        "creator": "lscapeisaverb",
+        "source_url": "https://www.midjourney.com/jobs/c165cce5-13da-47de-9799-8ec187450d87?index=3"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S008.jpg"
+    },
+    {
+      "id": "MJ-S009",
+      "name": "Ghostline Monochrome",
+      "family": "Conceptual monochrome graphics",
+      "family_id": "F4",
+      "tags": [
+        "high key",
+        "selective blur",
+        "negative space"
+      ],
+      "lighting": "High-key white field with diffuse illumination and dark shapes; minimal visible directional shadow.",
+      "palette": "White, black and a narrow grayscale range.",
+      "contrast": "Very high graphic contrast, softened around most silhouettes while the central detail remains sharper.",
+      "texture": "Smooth photographic tonal transitions, blurred forms and a clean near-white field.",
+      "composition": "A small sharp foreground focal region sits below a loose row of larger blurred silhouettes; broad white space is integral.",
+      "treatment": "Conceptual photographic montage or highly selective-focus appearance; the actual method is unknown.",
+      "recipe": "[NEW SUBJECT], conceptual black-and-white image on a luminous white field, one small crisply resolved focal detail, larger abstract dark forms receding into heavy blur, generous white negative space, smooth grayscale transitions and stark value contrast.",
+      "distinction": "The sharp-versus-blurred hierarchy matters more than any particular silhouette; unlike S022, it uses tonal blur rather than contour bands.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 9,
+      "source": {
+        "job_id": "ffecec96-a777-438d-b84d-96c16cb89b04",
+        "image_index": 2,
+        "creator": "augustsix",
+        "source_url": "https://www.midjourney.com/jobs/ffecec96-a777-438d-b84d-96c16cb89b04?index=2"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S009.jpg"
+    },
+    {
+      "id": "MJ-S010",
+      "name": "Roseglass Daydream",
+      "family": "Dreamlike editorial photography",
+      "family_id": "F1",
+      "tags": [
+        "rose tint",
+        "soft lens",
+        "layered frame"
+      ],
+      "lighting": "Soft ambient daylight with a rosy focal glow and gently luminous pale surfaces.",
+      "palette": "Blush pink, lavender-white, sage green and small saturated pink accents.",
+      "contrast": "Low-to-medium with softened transitions and a gentle bright focal zone.",
+      "texture": "Soft-focus photographic appearance, satin-like pale surfaces, delicate decorative detail and slight haze.",
+      "composition": "Intimate central framing within a wider decorative environment; layered foreground edges and a bright opening behind create depth.",
+      "treatment": "Romantic soft-lens editorial/snapshot treatment; diffusion filters or flash cannot be confirmed.",
+      "recipe": "[NEW SUBJECT], dreamy soft-focus editorial photograph, blush-pink focal tint, lavender-white highlights and sage surroundings, gentle diffuse daylight, faint luminous haze, delicate tactile detail, a central relaxed focal anchor framed by layered decorative edges and an airy background opening.",
+      "distinction": "Retains photographic softness and a rose color cast; S003 has a much more expansive fantasy scale and luminous atmospheric rays.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 10,
+      "source": {
+        "job_id": "b2101c14-1159-4344-a6c4-96129bbca20f",
+        "image_index": 2,
+        "creator": "u8264941187",
+        "source_url": "https://www.midjourney.com/jobs/b2101c14-1159-4344-a6c4-96129bbca20f?index=2"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S010.jpg"
+    },
+    {
+      "id": "MJ-S011",
+      "name": "Citrus Dapple",
+      "family": "Sunlit editorial photography",
+      "family_id": "F1",
+      "tags": [
+        "ochre yellow",
+        "hard sunlight",
+        "dappled shade"
+      ],
+      "lighting": "Strong warm daylight makes bright patches and patterned shadows across the focal area and setting.",
+      "palette": "Golden yellow, ivory, deep olive, ochre and warm brown.",
+      "contrast": "Medium-high with dark leafy-looking shadow masses and bright sunlit cloth-like planes.",
+      "texture": "Matte fabric, small glossy accents and warm grain-like photographic softness.",
+      "composition": "Relaxed diagonal movement in a close environmental crop; saturated lower color mass balances darker upper framing.",
+      "treatment": "Vintage sunlit lifestyle/fashion-editorial appearance; any film or lens attribution is unverified.",
+      "recipe": "[NEW SUBJECT], relaxed sunlit editorial photograph, bold golden-yellow and ivory focal colors against deep olive shade, warm dappled sunlight, distinct light-and-shadow patches, matte tactile surfaces, a loose diagonal arrangement, gentle grain-like finish and an easy unposed mood.",
+      "distinction": "Hard patterned daylight and a large yellow color mass distinguish it from S007's smoother golden rim-light treatment.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 11,
+      "source": {
+        "job_id": "5f275492-29ac-4cd4-816e-618e17ef92fa",
+        "image_index": 1,
+        "creator": "jesusismygrace",
+        "source_url": "https://www.midjourney.com/jobs/5f275492-29ac-4cd4-816e-618e17ef92fa?index=1"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S011.jpg"
+    },
+    {
+      "id": "MJ-S012",
+      "name": "Fuzzpop Studio",
+      "family": "Tactile 3D rendering",
+      "family_id": "F7",
+      "tags": [
+        "shaggy fibers",
+        "coral pink",
+        "gray studio"
+      ],
+      "lighting": "Broad soft studio-like key light with delicate edge highlights and a mild grounding shadow.",
+      "palette": "Coral red, hot pink, mauve, tiny cool-blue accents and blue-gray background.",
+      "contrast": "Moderate overall; stronger contrast in small dark details and bright focal highlights.",
+      "texture": "Dense shaggy individual fibers over a plush rounded volume; smooth polished small inserts contrast with the fuzzy surface.",
+      "composition": "Single compact full-form focal object against a plain background, with generous upper breathing room and a grounded base.",
+      "treatment": "Playful stylized 3D/puppet-like studio rendering; actual CGI or physical materials unknown.",
+      "recipe": "[NEW SUBJECT], playful tactile studio rendering, compact rounded exaggerated form covered in dense shaggy coral-pink fibers, small smooth contrasting details, blue-gray seamless background, broad soft key light, delicate edge highlights and a subtle contact shadow.",
+      "distinction": "Fiber-level fuzz is the signature; S026 instead emphasizes smooth molded surfaces and graphic clothing-like pattern.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 12,
+      "source": {
+        "job_id": "7e32aa13-65f1-4091-bd59-f77369c6e28b",
+        "image_index": 3,
+        "creator": "lintian",
+        "source_url": "https://www.midjourney.com/jobs/7e32aa13-65f1-4091-bd59-f77369c6e28b?index=3"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S012.jpg"
+    },
+    {
+      "id": "MJ-S013",
+      "name": "Confetti Village",
+      "family": "Decorative painterly illustration",
+      "family_id": "F5",
+      "tags": [
+        "stippling",
+        "festive red",
+        "cream ground"
+      ],
+      "lighting": "Even illustrative illumination with small bright speckles; little realistic light modeling.",
+      "palette": "Cream, scarlet, evergreen, dark teal, pale gray and tiny multicolor accents.",
+      "contrast": "Medium with sharp small dark marks scattered across a light ground.",
+      "texture": "Dense stippled, flecked and short-dab marks, rough paint/paper-like texture, simplified tiny forms.",
+      "composition": "Wide decorative tableau with a central tall anchor, repeated smaller upright forms and a shallow stage-like ground.",
+      "treatment": "Naive decorative painting with pointillist-like flecking; actual medium and technique unknown.",
+      "recipe": "[NEW SUBJECT], decorative naive painted tableau, cream ground with scarlet and evergreen accents, many tiny stippled and short-dab marks, simplified upright forms arranged around a central anchor, shallow stage-like depth, dense lively surface rhythm and an evenly lit handcrafted finish.",
+      "distinction": "Busy speckled surface and tiny repeated forms separate it from the broad blocky brushwork of S023.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 13,
+      "source": {
+        "job_id": "d3bf4df2-d604-4f16-8455-c50d4dc50ae1",
+        "image_index": 2,
+        "creator": "artbyleclaire",
+        "source_url": "https://www.midjourney.com/jobs/d3bf4df2-d604-4f16-8455-c50d4dc50ae1?index=2"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S013.jpg"
+    },
+    {
+      "id": "MJ-S014",
+      "name": "Tapestry Blockprint",
+      "family": "Textured print illustration",
+      "family_id": "F4",
+      "tags": [
+        "muted ink",
+        "outlined shapes",
+        "packed rhythm"
+      ],
+      "lighting": "Flat graphic illumination, with form indicated by contour and pattern rather than shading.",
+      "palette": "Warm cream, navy, sage-gray, mustard and muted terracotta.",
+      "contrast": "Medium-high dark outlines on cream, softened by muted inks and paper grain.",
+      "texture": "Dry print-like ink coverage, fine wavering contours, small stripes/dots and cream paper texture.",
+      "composition": "Dense staggered packing of rounded forms with overlaps, little empty ground and recurring internal patterns.",
+      "treatment": "Vintage illustrated print/woodblock-like appearance; process and cultural provenance are not established.",
+      "recipe": "[NEW SUBJECT], densely packed decorative illustration, rounded overlapping forms, fine dark irregular contours, warm cream paper, muted navy, sage and mustard inks, small alternating stripe and dot details, dry grainy print coverage and shallow flat space.",
+      "distinction": "Thin contours and many gently varied forms distinguish it from S025's few bold solid silhouettes.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 14,
+      "source": {
+        "job_id": "c0c1d6a1-dccf-474b-9481-ef08cbc949b8",
+        "image_index": 0,
+        "creator": "littlelions",
+        "source_url": "https://www.midjourney.com/jobs/c0c1d6a1-dccf-474b-9481-ef08cbc949b8?index=0"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S014.jpg"
+    },
+    {
+      "id": "MJ-S015",
+      "name": "Sorbet Repeat",
+      "family": "Flat pattern illustration",
+      "family_id": "F4",
+      "tags": [
+        "pink red",
+        "off-white",
+        "scattered motifs"
+      ],
+      "lighting": "Flat even illustrative light with virtually no cast shadows.",
+      "palette": "Cream, coral-red, pale pink and fresh green.",
+      "contrast": "Medium-high color separation against the light ground; gentle detail contrast inside motifs.",
+      "texture": "Opaque gouache-like fills, small irregular hand marks and lightly uneven edges.",
+      "composition": "Loose all-over repeat with rotated individual motifs, breathing room and no dominant central anchor.",
+      "treatment": "Hand-painted surface-pattern appearance; repeat continuity beyond the visible crop is unverified.",
+      "recipe": "[NEW SUBJECT MOTIF], cheerful flat surface-pattern illustration, coral-red and pale-pink opaque shapes with fresh-green accents on warm off-white, slightly irregular hand-painted edges, sparse tiny interior marks, loosely rotated recurring motifs and generous spacing, no realistic shading.",
+      "distinction": "An all-over pattern recipe rather than a single hero-object treatment; use a new motif instead of the source motif.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 15,
+      "source": {
+        "job_id": "c6b3489b-4e74-4d57-80f2-5dd97cbf78f6",
+        "image_index": 2,
+        "creator": "eudjeu",
+        "source_url": "https://www.midjourney.com/jobs/c6b3489b-4e74-4d57-80f2-5dd97cbf78f6?index=2"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S015.jpg"
+    },
+    {
+      "id": "MJ-S016",
+      "name": "Ochre Concept Plate",
+      "family": "Anime and concept design",
+      "family_id": "F6",
+      "tags": [
+        "ink wash",
+        "technical plate",
+        "black ochre"
+      ],
+      "lighting": "Illustrated directional highlights define selected surfaces while the white ground remains unlit and flat.",
+      "palette": "Charcoal black, warm gray, ochre yellow, vermilion accents, pale peach-pink and white.",
+      "contrast": "High dark/light contrast, with selective saturated color and broken bright highlights.",
+      "texture": "Scratchy ink-like edges, rough painterly panels, layered cloth-like and hard-surface detail.",
+      "composition": "Full-form central design on white, asymmetrical long shapes, generous margins and peripheral editorial type/block accents.",
+      "treatment": "Anime-influenced concept-art/editorial plate combining drawn contours with gritty painterly rendering; no production method known.",
+      "recipe": "[NEW SUBJECT], anime-influenced concept design plate on white, full-form central silhouette, charcoal and warm-gray rendering with selective ochre and vermilion accents, scratchy ink contours, rough painterly surface panels, long asymmetrical shapes and restrained abstract editorial margin blocks.",
+      "distinction": "More materially dense and painterly than S018's flat cel-colored close crop. Exact source text, symbols and character design are excluded.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 16,
+      "source": {
+        "job_id": "6ce9aa64-fe50-44b1-b7da-baa6fe520500",
+        "image_index": 2,
+        "creator": "chaza6377",
+        "source_url": "https://www.midjourney.com/jobs/6ce9aa64-fe50-44b1-b7da-baa6fe520500?index=2"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S016.jpg"
+    },
+    {
+      "id": "MJ-S017",
+      "name": "Violet Afterhours",
+      "family": "Cinematic night atmosphere",
+      "family_id": "F2",
+      "tags": [
+        "violet light",
+        "wet reflections",
+        "noir"
+      ],
+      "lighting": "Small violet-blue practical-looking lights and one stronger magenta accent glow through dark haze.",
+      "palette": "Indigo, near-black, electric violet, restrained cyan-green and hot magenta.",
+      "contrast": "High between tiny light sources and deep shadow; haze softens distant edges.",
+      "texture": "Wet-looking reflective ground, glass-like surfaces, dark silhouettes and light bloom.",
+      "composition": "Vertical urban depth with an off-center illuminated foreground structure, a fine silhouette at one side and repeating distant lights.",
+      "treatment": "Moody nocturnal cinematic illustration/photo-hybrid appearance; actual exposure, rain and location are unknown.",
+      "recipe": "[NEW SUBJECT], nocturnal cinematic environment, deep indigo and near-black, sparse violet practical-like lights with one magenta accent and a touch of cyan, wet reflective surfaces, hazy distance, an off-center illuminated focal structure, layered silhouettes and restrained light bloom.",
+      "distinction": "Multiple luminous colored points and wet reflection rhythm distinguish it from S019's broad teal fog and sparse amber windows.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 17,
+      "source": {
+        "job_id": "afa84a75-0959-4edc-8eec-ca80bc9ca6b8",
+        "image_index": 1,
+        "creator": "barkbark",
+        "source_url": "https://www.midjourney.com/jobs/afa84a75-0959-4edc-8eec-ca80bc9ca6b8?index=1"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S017.jpg"
+    },
+    {
+      "id": "MJ-S018",
+      "name": "Celpop Close Crop",
+      "family": "Anime and concept design",
+      "family_id": "F6",
+      "tags": [
+        "cel color",
+        "fine ink",
+        "bright panels"
+      ],
+      "lighting": "Flat illustrated illumination with small controlled shadow shapes and sparse highlights.",
+      "palette": "Peach-pink, ink black, pale cyan, sky blue, lemon yellow and a small coral accent.",
+      "contrast": "High contour contrast with broad flat midtone color regions.",
+      "texture": "Fine ink-like lines, small hatch accents and smooth cel-colored surfaces.",
+      "composition": "Very tight, slightly tilted square crop; focal form fills the frame while bright graphic background panels add rhythm.",
+      "treatment": "Retro cel-anime/manga-inspired editorial illustration; actual animation method and date unknown.",
+      "recipe": "[NEW SUBJECT], tight slightly tilted cel-illustration crop, fine black ink contours, peach-pink and pale-cyan midtones, bold black masses, sky-blue and lemon-yellow graphic background panels, sparse hatching, crisp limited shadow shapes and a small coral accent.",
+      "distinction": "Relies on clean flat color and a close crop; S016 uses a full-form design plate and much rougher material rendering.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 18,
+      "source": {
+        "job_id": "ba4481f0-60fa-473b-8c82-1cedfcf158a4",
+        "image_index": 2,
+        "creator": "aijiy7up",
+        "source_url": "https://www.midjourney.com/jobs/ba4481f0-60fa-473b-8c82-1cedfcf158a4?index=2"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S018.jpg"
+    },
+    {
+      "id": "MJ-S019",
+      "name": "Mistlight Geometry",
+      "family": "Cinematic mist atmosphere",
+      "family_id": "F2",
+      "tags": [
+        "teal fog",
+        "amber pinpoints",
+        "lonely scale"
+      ],
+      "lighting": "Diffuse cool atmospheric light surrounds a few small warm amber-orange internal glows.",
+      "palette": "Petrol blue, dark teal, charcoal and sparse amber with a tiny red accent.",
+      "contrast": "Low within the fog; localized warm lights provide the brightest contrast against dark simple geometry.",
+      "texture": "Soft haze obscures distant edges; broad matte dark planes and faint vegetation-like foreground silhouettes.",
+      "composition": "A large central geometric mass floats above a low dark ground band; tiny scale cues and empty air emphasize isolation.",
+      "treatment": "Architectural cinematic matte-painting/photo-hybrid feel; fog and lighting are descriptive, not known capture conditions.",
+      "recipe": "[NEW SUBJECT], solitary monumental geometric form in dense petrol-blue and teal mist, broad matte planes, a few tiny amber internal glows, low dark foreground band, softened distant edges, large quiet negative space and small scale cues, subdued cinematic contrast.",
+      "distinction": "Broad fog and sparse warm pinpoints are central; S017 has sharper neon colors and a busier rhythm of lights.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 19,
+      "source": {
+        "job_id": "b1370729-cc51-4889-b99a-55ad638db856",
+        "image_index": 1,
+        "creator": "u1284229982",
+        "source_url": "https://www.midjourney.com/jobs/b1370729-cc51-4889-b99a-55ad638db856?index=1"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S019.jpg"
+    },
+    {
+      "id": "MJ-S020",
+      "name": "Coolglass Precision",
+      "family": "Precision photographic realism",
+      "family_id": "F3",
+      "tags": [
+        "cool side light",
+        "glossy detail",
+        "low key"
+      ],
+      "lighting": "Cool directional side light draws a bright contour and small sharp reflections against a dark field.",
+      "palette": "Deep teal-gray, slate, warm neutral midtones, bright white and small cool-blue accents.",
+      "contrast": "High local contrast around edges and reflective inserts; restrained dark background.",
+      "texture": "Fine natural-looking microtexture contrasted with glossy transparent and smooth molded surfaces.",
+      "composition": "Tight side/profile crop, a clear sculptural outline, clean background and strong focal separation.",
+      "treatment": "Premium sport/product-editorial photographic appearance, shallow-focus-like separation; lens and aperture unknown.",
+      "recipe": "[NEW SUBJECT], premium precision editorial photograph, tight sculptural side view, cool directional edge light against a deep teal-gray background, bright white and blue accent details, crisp natural microtexture beside glossy transparent surfaces, controlled specular reflections and selective focus.",
+      "distinction": "Sharper and cleaner material emphasis than S004's gritty motion and overlapping diagonal foreground.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 20,
+      "source": {
+        "job_id": "0586e928-f69f-4391-a264-d3a8eeb84e21",
+        "image_index": 1,
+        "creator": "talkhuman",
+        "source_url": "https://www.midjourney.com/jobs/0586e928-f69f-4391-a264-d3a8eeb84e21?index=1"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S020.jpg"
+    },
+    {
+      "id": "MJ-S021",
+      "name": "Chromatic Salon",
+      "family": "Expressive painterly illustration",
+      "family_id": "F5",
+      "tags": [
+        "fauvist color",
+        "brush blocks",
+        "decorative depth"
+      ],
+      "lighting": "Color conveys illumination; warm focal planes contrast with cool surrounding planes rather than physically consistent light.",
+      "palette": "Vermilion, orange-gold, turquoise, ultramarine, emerald and near-black.",
+      "contrast": "High chromatic contrast and selective dark anchors, with lively variation across most of the image.",
+      "texture": "Visible broad strokes, broken opaque paint-like patches and small energetic decorative dabs.",
+      "composition": "Deep layered interior-like space, receding diagonal planes, repeated vertical framing and overlapping foreground accents.",
+      "treatment": "Expressive modernist/fauvist-like painting appearance; actual paint medium is unknown.",
+      "recipe": "[NEW SUBJECT], expressive opaque painted scene, vermilion and orange-gold planes against turquoise, ultramarine and emerald, broad broken brushstrokes with lively small dabs, dark structural anchors, receding diagonal layers and decorative vertical framing, exuberant chromatic contrast.",
+      "distinction": "Many competing vivid color planes and deep environmental space distinguish it from S023's single dominant focal form.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 21,
+      "source": {
+        "job_id": "7bf6accf-ed7e-4fee-a9d7-a0ad7a65fdbe",
+        "image_index": 1,
+        "creator": "kobam_85064",
+        "source_url": "https://www.midjourney.com/jobs/7bf6accf-ed7e-4fee-a9d7-a0ad7a65fdbe?index=1"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S021.jpg"
+    },
+    {
+      "id": "MJ-S022",
+      "name": "Contourwave",
+      "family": "Optical graphic illusion",
+      "family_id": "F4",
+      "tags": [
+        "black white",
+        "warped bands",
+        "form reveal"
+      ],
+      "lighting": "Illumination is encoded as the density and width of bands rather than natural tonal modeling.",
+      "palette": "Pure-looking black and warm white.",
+      "contrast": "Extreme black-white contrast, with small focal interruptions in the stripe field.",
+      "texture": "Smooth solid graphic bands with clean organic curves; minimal visible grain.",
+      "composition": "Tight frontal arrangement fills the frame; warped bands follow volume and converge around focal details.",
+      "treatment": "Op-art-like graphic treatment of a realistically modeled form; the original production process is unknown.",
+      "recipe": "[NEW SUBJECT], striking monochrome optical graphic, flowing irregular black-and-white bands that wrap around and reveal the subject's volume, tight frontal framing, carefully controlled band width, a few focal interruptions, clean high-contrast shapes and almost no gray.",
+      "distinction": "Volume arises from warped stripe geometry; S009 instead separates sharp and blurred photographic shapes.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 22,
+      "source": {
+        "job_id": "08cd8759-143c-4623-8eca-c56f0250436a",
+        "image_index": 3,
+        "creator": "Alexandra Aisling",
+        "source_url": "https://www.midjourney.com/jobs/08cd8759-143c-4623-8eca-c56f0250436a?index=3"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S022.jpg"
+    },
+    {
+      "id": "MJ-S023",
+      "name": "Azure Impasto",
+      "family": "Faceted painterly illustration",
+      "family_id": "F5",
+      "tags": [
+        "sky blue",
+        "coral pink",
+        "palette-knife feel"
+      ],
+      "lighting": "Bright even illustrative daylight with warm illuminated facets and cool shadow planes.",
+      "palette": "Sky blue, coral pink, blush, warm cream, ochre and muted green.",
+      "contrast": "Medium-high between focal warm facets and a broad cool field; limited dark accents.",
+      "texture": "Broad angular opaque strokes and layered planar patches create a palette-knife/painted-paper-like effect; physical thickness unknown.",
+      "composition": "Tall slender focal axis within a vertical frame, one large upper focal mass and a low horizontal environmental band.",
+      "treatment": "Faceted decorative painting with simplified volumetric planes; oil paint or actual impasto is unverified.",
+      "recipe": "[NEW SUBJECT], bright faceted decorative painting, coral-pink and warm-cream focal planes against a broad sky-blue field, angular opaque brush patches, palette-knife-like surface rhythm, a slender vertical anchor, restrained ochre and green lower accents, simplified depth and cheerful daylight.",
+      "distinction": "Broad planar facets and warm-on-blue clarity distinguish it from S003's translucent fantasy softness.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 23,
+      "source": {
+        "job_id": "27a4e477-cf33-4667-85e4-ce6c08e82c8d",
+        "image_index": 0,
+        "creator": ".sebastianho",
+        "source_url": "https://www.midjourney.com/jobs/27a4e477-cf33-4667-85e4-ce6c08e82c8d?index=0"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S023.jpg"
+    },
+    {
+      "id": "MJ-S024",
+      "name": "Amber Worktable",
+      "family": "Intimate photographic storytelling",
+      "family_id": "F1",
+      "tags": [
+        "overhead crop",
+        "warm shadow",
+        "tactile detail"
+      ],
+      "lighting": "Warm directional natural-looking light from one side produces soft but substantial shadows.",
+      "palette": "Walnut brown, aged cream, dark olive-green and small silver-gray highlights.",
+      "contrast": "Medium-high with rich shaded areas and a few bright pale focal planes.",
+      "texture": "Matte paper-like planes, woven fabric-like surfaces, warm wood grain and small reflective details.",
+      "composition": "Close overhead/oblique arrangement focused on an interaction across a horizontal surface; edge crops and cinematic black bands concentrate attention.",
+      "treatment": "Cinematic documentary detail photograph; camera angle and letterboxed appearance are visible, while equipment is unknown.",
+      "recipe": "[NEW SUBJECT], intimate cinematic detail photograph from a high oblique angle, warm side light, walnut-brown and aged-cream palette with dark olive shadows, tactile matte surfaces, a small interaction as focal anchor, overlapping cropped forms and quiet negative space, optional restrained letterboxing.",
+      "distinction": "Process-like close framing and overlapping tactile planes distinguish it from S008's frontal environmental portrait.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 24,
+      "source": {
+        "job_id": "d948adf6-4bf7-4921-8ede-1012112d59a7",
+        "image_index": 1,
+        "creator": "aplussign",
+        "source_url": "https://www.midjourney.com/jobs/d948adf6-4bf7-4921-8ede-1012112d59a7?index=1"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S024.jpg"
+    },
+    {
+      "id": "MJ-S025",
+      "name": "Terracotta Totem",
+      "family": "Bold print illustration",
+      "family_id": "F4",
+      "tags": [
+        "reduction print",
+        "cream black red",
+        "decorative border"
+      ],
+      "lighting": "Flat graphic illumination with no volumetric shading.",
+      "palette": "Warm cream, solid near-black and muted brick/salmon red.",
+      "contrast": "High, organized into a small number of broad solid shapes.",
+      "texture": "Rough ink-like coverage, slightly uneven hand-cut edges, visible paper grain and simple incised pattern marks.",
+      "composition": "Square framed composition with a few bold vertical and horizontal silhouettes, asymmetric internal balance and a decorative border.",
+      "treatment": "Hand-carved blockprint/reduction-print-like appearance; technique and cultural origin are not established.",
+      "recipe": "[NEW SUBJECT], bold limited-ink decorative print, warm cream paper with solid black and muted terracotta-red shapes, a few large simplified silhouettes, rough hand-cut edges, sparse incised pattern marks, an irregular decorative border and balanced flat spacing.",
+      "distinction": "Large solid silhouettes and few inks separate it from S014's thinner outlined forms and dense varied pattern.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 25,
+      "source": {
+        "job_id": "248ac560-efe7-4ac2-976c-0dce2559dcca",
+        "image_index": 1,
+        "creator": "u1392684568",
+        "source_url": "https://www.midjourney.com/jobs/248ac560-efe7-4ac2-976c-0dce2559dcca?index=1"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S025.jpg"
+    },
+    {
+      "id": "MJ-S026",
+      "name": "Candy Vinyl",
+      "family": "Stylized 3D fashion rendering",
+      "family_id": "F7",
+      "tags": [
+        "salmon studio",
+        "smooth molded form",
+        "pastel patterns"
+      ],
+      "lighting": "Soft even studio-like light, restrained shadows and gentle smooth highlights.",
+      "palette": "Salmon pink, pale lavender, lime green, red and warm white.",
+      "contrast": "Low-to-medium tonal contrast with brighter graphic pattern contrasts.",
+      "texture": "Smooth porcelain/vinyl-like focal surfaces with finely textured knit-like areas and clean repeated checks/diamonds.",
+      "composition": "Centered isolated full-form subject against a plain color field, elongated proportions and a deliberately oversized focal region.",
+      "treatment": "Stylized 3D designer-toy/fashion-doll appearance; actual materials and rendering software are unknown.",
+      "recipe": "[NEW SUBJECT], stylized designer-toy studio rendering, elongated proportions with an oversized focal region, smooth porcelain-vinyl-like surfaces, soft salmon-pink seamless ground, pale lavender and lime accents, small red-and-white graphic checks, delicate knit-like texture contrasts and broad diffuse light.",
+      "distinction": "Smooth molded surfaces and fashion-like graphic patterning contrast with S012's dense shaggy fibers.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 26,
+      "source": {
+        "job_id": "95bf6ff4-0e46-4d76-a1b8-216575035d89",
+        "image_index": 2,
+        "creator": "nine1234.11",
+        "source_url": "https://www.midjourney.com/jobs/95bf6ff4-0e46-4d76-a1b8-216575035d89?index=2"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S026.jpg"
+    },
+    {
+      "id": "MJ-S027",
+      "name": "Silverstroke Cyan",
+      "family": "Painterly material realism",
+      "family_id": "F5",
+      "tags": [
+        "iridescent strokes",
+        "cyan ground",
+        "reflected color"
+      ],
+      "lighting": "Broad directional illumination creates bright silver-white facets and a compact dark contact shadow.",
+      "palette": "Cyan-teal ground, silver-white, cobalt and indigo, with coral-red and warm ochre reflections.",
+      "contrast": "High local contrast along reflective edges; a broad even colored ground keeps the composition readable.",
+      "texture": "Visible directional painted strokes build iridescent metallic-looking highlights and subtly rough surface planes.",
+      "composition": "Repeated overlapping elongated forms sweep diagonally across a square field; alternating directions generate a compact rhythm.",
+      "treatment": "Painterly realistic still-life appearance. Larger detail view confirms visible brush-like marks; actual physical paint is not known.",
+      "recipe": "[NEW SUBJECT], painterly material study on a flat cyan-teal field, directional opaque strokes building silver-white, cobalt and indigo reflective facets, small coral and ochre reflected-color accents, compact cast shadows, overlapping elongated forms and a strong diagonal rhythm.",
+      "distinction": "Painted strokes, rather than photographic microdetail, create the metallic impression; S020 instead uses a crisp photographic finish.",
+      "confidence": "Medium-high for broad painted-stroke character: complete feed card and approximately 604 × 604 px browser detail view visually inspected. Actual medium remains unknown.",
+      "number": 27,
+      "source": {
+        "job_id": "fd9cb1e9-aa9b-4df4-9609-bdd5549134c0",
+        "image_index": 2,
+        "creator": "kaybee",
+        "source_url": "https://www.midjourney.com/jobs/fd9cb1e9-aa9b-4df4-9609-bdd5549134c0?index=2"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S027.jpg"
+    },
+    {
+      "id": "MJ-S028",
+      "name": "Pencilwire Whimsy",
+      "family": "Monochrome sketch illustration",
+      "family_id": "F4",
+      "tags": [
+        "fine pencil",
+        "angular gesture",
+        "white margin"
+      ],
+      "lighting": "Light grayscale shading with a small grounding shadow and an otherwise clean white field.",
+      "palette": "White, pale graphite gray and near-black fine-line accents.",
+      "contrast": "Low-to-medium overall, with a few dark details and strong outline accents.",
+      "texture": "Fine scratchy pencil/ink-like contours, light crosshatching, loose construction marks and sparse smudged tone.",
+      "composition": "An elongated angular focal form makes a lively diagonal gesture within generous white margins; a small base shadow anchors it.",
+      "treatment": "Whimsical concept/cartoon sketch appearance; pencil versus ink is not verified.",
+      "recipe": "[NEW SUBJECT], whimsical monochrome concept sketch on white, elongated angular proportions and an energetic diagonal gesture, fine scratchy graphite-like contours, light crosshatching, sparse loose construction marks, a tiny grounding shadow and generous clean margins.",
+      "distinction": "More volumetric and gestural than S002's sparse environmental line sketch; keep grayscale shading light.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 28,
+      "source": {
+        "job_id": "73c6e98b-0cc3-4555-8240-0b57c7a87827",
+        "image_index": 2,
+        "creator": "richiegunn",
+        "source_url": "https://www.midjourney.com/jobs/73c6e98b-0cc3-4555-8240-0b57c7a87827?index=2"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S028.jpg"
+    },
+    {
+      "id": "MJ-S029",
+      "name": "Freshlight Tabletop",
+      "family": "Precision natural-light photography",
+      "family_id": "F3",
+      "tags": [
+        "overhead",
+        "fresh green",
+        "appetizing gloss"
+      ],
+      "lighting": "Bright diffuse side daylight with small glossy highlights and softly defined shadows.",
+      "palette": "Fresh leaf green, olive, warm orange-gold, ivory, tan and pale cool-gray background.",
+      "contrast": "Medium-high color contrast with clean highlights and distinct material separation.",
+      "texture": "Detailed organic microtexture, moist glossy highlights, granular surfaces and softly reflective ceramic-like edges.",
+      "composition": "Close overhead/steep oblique framing, a rounded container near the image edges and densely arranged contrasting color/texture zones.",
+      "treatment": "Natural-light food/product-editorial photographic appearance; camera, lens and capture setup unknown.",
+      "recipe": "[NEW SUBJECT], fresh natural-light tabletop editorial photograph, close overhead-to-steep-oblique view, diffuse side daylight, fresh green and warm orange-gold against ivory and pale cool gray, detailed organic textures, small moist-looking specular highlights, rounded framing and clearly separated tactile color zones.",
+      "distinction": "Bright organic material variety and top-down presentation distinguish it from S020's low-key side-profile precision.",
+      "confidence": "Medium: complete feed-card image visually reviewed; fine texture and technique descriptions are provisional, not verified production metadata.",
+      "number": 29,
+      "source": {
+        "job_id": "dbd92f22-a47f-4077-be21-842554df8d4a",
+        "image_index": 0,
+        "creator": "Ism01",
+        "source_url": "https://www.midjourney.com/jobs/dbd92f22-a47f-4077-be21-842554df8d4a?index=0"
+      },
+      "thumbnail": "assets/thumbnails/MJ-S029.jpg"
+    }
+  ]
+}
